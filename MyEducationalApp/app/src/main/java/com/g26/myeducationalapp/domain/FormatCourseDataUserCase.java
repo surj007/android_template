@@ -26,7 +26,6 @@ public class FormatCourseDataUserCase {
         this.courseRepository = courseRepository;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.N)
     public void getCourses(String name, Callback<List<Course>> callback) {
         ExecutorService executorService = Executors.newFixedThreadPool(2);
 
